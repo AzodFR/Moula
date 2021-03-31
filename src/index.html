@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2"  />
     <title>Moula Sale</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -18,17 +20,17 @@
             <div id="loader">
                 <p class="text-center">Loading...</p>
             </div>
-            <div id="content" class="text-center">
+            <div id="content" class="text-center" style="display: none;">
                 <p>
                     Introducing "Moula Token" (MLA)!
-                    Token price is <span class="token-price"></span> Ether. 
+                    Token price is <span class="token-price"></span> ETH. 
                     You currently have <span class="moula-balance"></span>&nbsp;MLA
                 </p>
                 <br/>
-                <form role="form">
+                <form role="form" onSubmit="App.buyTokens(); return false;">
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="number" id="numberOfToken" class="form-control input-lg" name="number" value="1", min="1" pattern="[0-9]"></input>
+                            <input type="number" id="numberOfTokens" class="form-control input-lg" name="number" value="1", min="1" pattern="[0-9]"></input>
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
                             </span>
@@ -40,7 +42,7 @@
                     <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
-                <p><span class="token-sold"></span> / <span class="token-available"></span> tokens sold</p>
+                <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
                 <hr>
                 <p id="accountAddress"></p>
             </div>

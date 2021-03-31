@@ -46,7 +46,7 @@ contract('MoulaTokenSale', function(accounts) {
             assert.equal(receipt.logs[0].event, 'Sell', 'check the name of Event');
             assert.equal(receipt.logs[0].args._buyer, buyer, 'check buyer');
             assert.equal(receipt.logs[0].args._amount, numberOfTokens, 'check amount');
-            return tokenSaleInstance.tokenSold();
+            return tokenSaleInstance.tokensSold();
         }).then(function(amount) {
             assert.equal(amount.toNumber(), numberOfTokens, 'increment the amount of tokens sold');
             return tokenInstance.balanceOf(buyer);
