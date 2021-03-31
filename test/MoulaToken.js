@@ -37,7 +37,7 @@ contract('MoulaToken', function(accounts)
             tokenInstance = instance;
             return tokenInstance.transfer.call(accounts[1], 999999);
         }).then(assert.fail).catch(function(error) {
-            assert(error.message.indexOf("sender's balance is too low") >= 0, 'error message must contain revert');
+            assert(error.message.indexOf("sender's balance is too low") >= 0, 'error message must be emit');
             return tokenInstance.transfer.call(accounts[1], 10000, { from: accounts[0] });
         }).then(function(success) {
             assert.equal(success, true, 'check return boolean');
