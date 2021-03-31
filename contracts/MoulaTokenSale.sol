@@ -44,7 +44,7 @@ contract MoulaTokenSale
     function endSale() public
     {
         require(msg.sender == admin, "sender must be admin");
-        require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))), "transfer failed");
+        require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this))), "can't transfer tokens");
         msg.sender.transfer(address(this).balance);
     }
 }

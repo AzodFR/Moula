@@ -1,0 +1,17 @@
+{
+    "name": "moula-sale",
+    "version": "1.0.0",
+    "description": "Moula Sale ICO",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "author": "Theo",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    }
+}
