@@ -7,7 +7,7 @@ contract('MoulaTokenSale', function(accounts) {
     var tokenInstance;
     var admin =accounts[0];
     var buyer = accounts[1];
-    var tokenPrice = 500000000000000; // wei = 0.0005 eth
+    var tokenPrice = 350000000000000; // wei = 0.0035 eth
     var tokensAvailable = 502500;
     var numberOfTokens = 1;
     var value = numberOfTokens * tokenPrice;

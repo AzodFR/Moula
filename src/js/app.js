@@ -3,7 +3,7 @@ App= {
     contracts: {},
     account: '0x0',
     loading: false,
-    tokenPrice: 500000000000000,
+    tokenPrice: 350000000000000,
     tokensAvailable: 525500,
     tokensSold: 0,
     balance: 0,

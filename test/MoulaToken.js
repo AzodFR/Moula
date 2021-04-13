@@ -25,7 +25,7 @@ contract('MoulaToken', function(accounts)
             tokenInstance = instance;
             return tokenInstance.totalSupply();
         }).then(function(totalSupply) {
-            assert.equal(totalSupply.toNumber(), 670000, 'sets the total supply to 67 000');
+            assert.equal(totalSupply.toNumber(), 670000, 'sets the total supply to 670 000');
             return tokenInstance.balanceOf(accounts[0]);
         }).then(function(adminBal) {
             assert.equal(adminBal.toNumber(), 670000, 'check if the creator have it all')
